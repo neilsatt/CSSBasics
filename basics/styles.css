@@ -1,0 +1,100 @@
+/* 
+ - A type selector selects a type of element on a page
+ - The HTML element tas is the selector (body, p, etc.)
+
+ - Descendant selectors target elements that are decendants
+    of other elements
+
+ - Pseudo-classes can target elements based on user interaction
+
+
+
+*/
+
+/* importing styles from another file into html:
+    <style>
+        @import'import-styles.css';
+    </style>
+*/
+
+/* importing an extenal css file into another css file: */
+@import "css/import-styles.css";
+
+/* CSS Rules and Selectors */
+selector {
+    property: value;  /*declaration*/
+}
+
+/* 
+
+There are class and ID selectors (. and #) 
+   multiple elements can be targeted by class selectors
+   IDs carry more weight, since they are more specific
+
+
+Descendent selector can also get specific elements
+
+To get a span inside a header:
+
+header span {
+     color: white;
+}
+
+You can do the same thing with classes
+.main-header span {
+}
+
+Unordered list items
+ul li {
+
+}
+
+*/
+
+/* 
+ Pseudo Classes - similar to classes, but they’re not explicitly defined in an element's class attribute - they don't appear in the source code.
+
+
+ Targeted based on user interaction, like links - hover, focus, visited, etc.
+ Thinki of it like adding a keyword to a selector 
+*/
+selector:pseudo-class {
+    property: value;
+}
+
+a:visited {
+    color: lightblue;
+}
+
+a:hover {
+    color: lightblugreen;
+}
+
+/* CSS data types - a type of CSS value 
+
+    Color, integers, numbers, percentages, images, gradients
+
+    Units 
+    Absolute
+        Pixels (the size remains the same and will not scale)
+
+    Percentages - relative to something else. Relative to a parent element.
+
+    Em - 1em is equal to the font-size value of the parent element
+
+    Rem - relative to the root element of the page. Gets us around 
+          compounding font issue size with ems
+
+
+    Overview 
+    Pixels are more precise and predictable
+    %, em, or rems when you need to text to scale to different devices
+    
+
+*/
+
+/* 
+Color values
+
+RGB - #ff0033 - red, green, blue
+*/
