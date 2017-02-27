@@ -98,3 +98,21 @@ Color values
 
 RGB - #ff0033 - red, green, blue
 */
+
+/*
+ Display Values 
+
+none, block, inline, inline-block
+
+Cascading follow 3 steps to determind which properties get assigned:
+
+1) Importance - Origin of stylesheet (User Agent, User Styles, Author Styles) - Author wins
+
+2) Specificity - the higher the specificity will be used
+    Order: inline, ID, class, element
+    More than one stylesheet, last one is used
+
+
+3) Source Order
+
+*/
